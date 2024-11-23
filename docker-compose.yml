@@ -1,0 +1,23 @@
+version: '3'
+services:
+  server:
+    build:
+      context: ./audiotranscriber
+      dockerfile: dockerfile
+    image: audio-transcriber-backend
+    container_name: audio-backend
+    command: python3 manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000" 
+    env_file: ./audiotranscriber/.env
+  
+  client:
+    build:
+      context: ./client
+      dockerfile: dockerfile
+    image: audio-transcriber-frontend
+    container_name: audio-frontend
+    command: serve -s dist
+    ports:
+      - "3000:3000"
+
