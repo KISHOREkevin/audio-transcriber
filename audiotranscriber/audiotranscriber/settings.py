@@ -56,7 +56,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware'
 ]
 CORS_ALLOWED_ORIGINS=[
-    "http://localhost:3000"
+    "https://audio-transcriber-1212.netlify.app/" 
 ]
 
 ROOT_URLCONF = 'audiotranscriber.urls'
