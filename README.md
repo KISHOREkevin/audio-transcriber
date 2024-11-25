@@ -20,6 +20,7 @@ https://github.com/user-attachments/assets/ea8a9bdd-6f5a-4661-880a-9ccabb1c03b9
 * PostgreSQL Database
 * Dotenv (eenvironment variables)
 * Assembly AI model (audio transcriptions)
+* Docker and Docker compose
 * Cloudinary (File hosting)
 * React + Vite
 * Tailwind CSS
